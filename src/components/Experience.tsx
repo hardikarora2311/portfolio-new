@@ -22,10 +22,11 @@ const Experience = () => {
                 className="lg:w-32 md:w-20 w-16"
               />
 
-              <div className="lg:ms-5">
+              <div className="lg:ms-5 flex flex-col items-start">
                 <h1 className="text-start text-xl md:text-2xl font-bold">
                   {card.title}
                 </h1>
+                <span className="mt-px text-white-200">{card.company}</span>
                 <p className="text-start text-white-100 mt-3 font-semibold">
                   {card.desc}
                 </p>

@@ -37,11 +37,12 @@ const Footer = () => {
           Copyright &copy; 2024 Hardik Arora
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center md:gap-3 gap-6 mt-8 md:mt-0">
           {socialMedia.map((profile) => (
             <a
               href={profile.link}
               key={profile.id}
+              target="_blank"
               className="size-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
               <img src={profile.img} alt={profile.img} width={20} height={20} />
